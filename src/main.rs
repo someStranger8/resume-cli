@@ -10,7 +10,7 @@ use skills::show_skills;
 fn main() {
     println!("");
     println!("");
-    println!("Hey there! I'm {}, a full stack web3 developer and currently learning new technologies.","Karan Pargal".bold().bright_yellow());
+    println!("Hey there! I'm {}, a backend developer and currently learning new technologies.","Gage Atkinson".bold().bright_yellow());
 
     let options = vec!["About","Skills","Contact","Exit"];
 
@@ -36,7 +36,7 @@ fn main() {
                     let res = show_skills(&contents);
                     match res {
                         Ok(_res) => println!(""),
-                        Err(_) => println!("Error in experience.rs"),
+                        Err(_) => println!("Error in skills.rs"),
                     }
                 }
                 else if choice == options[2] {
